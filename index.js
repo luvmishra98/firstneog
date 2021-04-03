@@ -1,15 +1,12 @@
+
 var readline=require("readline-sync");
-var n=parseInt(readline.question());
-
-for (var i=1;i<=n;i++){
-  var str="";
-for (var j=1;j<=i;j++){
-str+="*";
-  console.log(str);
-
-}console.log();
-str="";
-
+var arr=new Array();
+console.log("Enter five grocery items :")
+for (var i=0;i<5;i++){
+  arr[i]=readline.question("Enter "+i+" item ");
+  
 }
-
-console.log(n);
+console.log("Grocery Items are :")
+for(var j=0;j<5;j++){
+  console.log(arr[j]);
+}
