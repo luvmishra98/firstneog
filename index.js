@@ -1,9 +1,14 @@
-// var readlineSync = require('readline-sync');
- 
+var readline=require("readline-sync");
+var decide=readline.question("Are you older then 18");
+var score=0;
 
-// var userName = readlineSync.question('May I have your name? ');
-// console.log('Hi ' + userName + '!');
-
-var r=require('readline-sync');
-var user=r.question("Hello, your name please ??");
-console.log("Welcome !"+user);
+console.log("You entered "+decide);
+if (decide=="yes"){
+  console.log("Voila You are "+"right");
+  score++;
+  console.log("Score is :"+score);
+}else{
+  console.log("OOH SHIT !!! You are "+"wrong");
+    // score++;
+  console.log("Score is :"+score);
+}
