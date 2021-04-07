@@ -1,12 +1,18 @@
+var supermen={
 
-var readline=require("readline-sync");
-var arr=new Array();
-console.log("Enter five grocery items :")
-for (var i=0;i<5;i++){
-  arr[i]=readline.question("Enter"+i+":" );
-  
-}
-console.log("Grocery Items are :")
-for(var j=0;j<5;j++){
-  console.log(arr[j]);
-}
+  height:100,
+  name:"supermen salman ka fan",
+  color:"red",
+  strenth:10
+};
+var batmen={
+  height:120,
+  name:"I am a Disko Dancer ! Jindgi mera Gana",
+  color:"black",
+  strenth:20
+};
+console.log("Color of two SuperPowers is:")
+console.log(supermen.color+" " +batmen.color);
+console.log(supermen.name);
+console.log(batmen.name);
+console.log(batmen.strenth>supermen.strenth);
